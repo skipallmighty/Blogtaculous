@@ -3,11 +3,20 @@ Blogtaculous
 
 To install on a virtual machine of some sort (linux ubuntu flavored) and go into your virtual machine and start terminal. 
 
-If you haven't already create a new user with `useradd yourname`. Then install the website in /home/yourname/cake/... Remember where you put it because you will need to adjust the cake.conf in step 3. 
+If you haven't already create a new user with `sudo useradd yourname`. Then install the website in /home/yourname/cake/... Remember where you put it because you will need to adjust the cake.conf in step 3. 
 
 1.  Make sure you have a bridged network connection. Afterwhich you can get your ip address with `ifconfig`
 2.  Install apache-mysql-php with `sudo apt-get install lamp-server^`.
 3.  Setup your apache site by creating a apache config at `/etc/apache2/sites-available/cake.conf`. You can see my full `cake.conf` in this repo.
+..*  Make sure in `/etc/apache2/apache2.conf` that where you see `<Directory />` if it says `Require all denied` change that to `Require all granted`.
+    
+    <Directory />
+        Options FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+    
+
 4.  Enable your conf file for apache to pull configurations from it with `sudo a2ensite cake.conf`.
 5.  Restart apache `sudo service apache2 restart`. You can replace restart with reload for speed.
 6.  Create your mysql database by logging in to mysql first. `mysql -uroot -p`.
