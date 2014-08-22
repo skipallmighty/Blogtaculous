@@ -26,3 +26,5 @@ If you haven't already create a new user with `sudo useradd yourname`. Then inst
 10.  Create your `post` table. `create table posts ( id INT AUTO_INCREMENT PRIMARY KEY,  title varchar(50), author varchar(50), content varchar(500) );`
 11.  If you have set your network to be bridged and you have your ip address from step 1 you can go to you host machine (your mac) and type in the ipaddress. For me it was `192.168.1.6`.. So you can get the list of posts `192.168.1.6/posts`. Add `.json` for JSON and add `.xml` for XML.
 12.  If you have any permissions issues make sure that your `app/tmp` directory has good permission... do `sudo chmod -R 777 app/tmp`.
+13.  If you want to you can change your `/private/etc/hosts` file to point to mysite.com or something like that. See video.
+14.  Go have fun.
