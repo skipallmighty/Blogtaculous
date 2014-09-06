@@ -31,3 +31,4 @@ If you haven't already create a new user with `sudo useradd yourname`. Then inst
 14.  Go have fun.
 15.  Make your tmp directory writable with `sudo chmod -R 777 app/tmp`
 16.  Make your cache directory writable with `sudo chmod -R 777 Cache /cake/lib/Cake/Config`
+17.  Delete the contents (but not the file) of the default apache conf `/etc/apache2/sites-available/000-default.conf/`
