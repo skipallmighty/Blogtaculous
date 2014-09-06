@@ -1,0 +1,305 @@
+2014-08-21 16:53:14 Error: [NotFoundException] Invalid post
+Request URL: /posts/view/json/1
+Stack Trace:
+#0 [internal function]: PostsController->view('json', '1')
+#1 /home/skip/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /home/skip/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-21 16:58:37 Error: [MissingActionException] Action PostsController::2() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => '2',
+)
+Request URL: /posts/2.json
+Stack Trace:
+#0 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /home/skip/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-21 17:03:18 Error: [MissingViewException] View file "/home/skip/cake/app/View/Posts/json/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/skip/cake/app/View/Posts/json/add.ctp',
+)
+Request URL: /posts/add.json
+Stack Trace:
+#0 /home/skip/cake/lib/Cake/View/JsonView.php(107): View->_getViewFileName(NULL)
+#1 /home/skip/cake/lib/Cake/Controller/Controller.php(954): JsonView->render(NULL, NULL)
+#2 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /home/skip/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-21 18:36:55 Error: [NotFoundException] Not Found
+Request URL: /
+Stack Trace:
+#0 /home/skip/cake/lib/Cake/View/View.php(948): include()
+#1 /home/skip/cake/lib/Cake/View/View.php(910): View->_evaluate('/home/skip/cake...', Array)
+#2 /home/skip/cake/lib/Cake/View/View.php(471): View->_render('/home/skip/cake...')
+#3 /home/skip/cake/lib/Cake/Controller/Controller.php(954): View->render('home', NULL)
+#4 /home/skip/cake/app/Controller/PagesController.php(69): Controller->render('home')
+#5 [internal function]: PagesController->display('home')
+#6 /home/skip/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#7 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#9 /home/skip/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-08-21 18:38:30 Error: [MissingActionException] Action PostsController::3() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => '3',
+)
+Request URL: /posts/3.json
+Stack Trace:
+#0 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /home/skip/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-21 18:38:34 Error: [MissingActionException] Action PostsController::2() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => '2',
+)
+Request URL: /posts/2.json
+Stack Trace:
+#0 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /home/skip/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-21 18:44:48 Error: [MissingActionException] Action PostsController::4() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => '4',
+)
+Request URL: /posts/4.json
+Stack Trace:
+#0 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /home/skip/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-21 18:44:56 Error: [MissingActionException] Action PostsController::4() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => '4',
+)
+Request URL: /posts/4/?format=json
+Stack Trace:
+#0 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /home/skip/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-21 18:45:02 Error: [MissingActionException] Action PostsController::4() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => '4',
+)
+Request URL: /posts/4?format=json
+Stack Trace:
+#0 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /home/skip/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-21 18:45:06 Error: [MissingActionException] Action PostsController::4() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => '4',
+)
+Request URL: /posts/4
+Stack Trace:
+#0 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /home/skip/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-21 21:52:28 Error: [MissingControllerException] Controller class Posts.jsonController could not be found.
+Exception Attributes: array (
+  'class' => 'Posts.jsonController',
+  'plugin' => NULL,
+)
+Request URL: /posts.json/
+Stack Trace:
+#0 /home/skip/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-21 21:54:24 Error: [MissingControllerException] Controller class Posts.jsonController could not be found.
+Exception Attributes: array (
+  'class' => 'Posts.jsonController',
+  'plugin' => NULL,
+)
+Request URL: /posts.json/
+Stack Trace:
+#0 /home/skip/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-21 21:58:17 Error: [MissingControllerException] Controller class Posts.jsonController could not be found.
+Exception Attributes: array (
+  'class' => 'Posts.jsonController',
+  'plugin' => NULL,
+)
+Request URL: /posts.json/
+Stack Trace:
+#0 /home/skip/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-21 21:58:36 Error: [MissingControllerException] Controller class Posts.jsonController could not be found.
+Exception Attributes: array (
+  'class' => 'Posts.jsonController',
+  'plugin' => NULL,
+)
+Request URL: /posts.json/
+Stack Trace:
+#0 /home/skip/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-21 22:00:27 Error: [MissingControllerException] Controller class Posts.jsonController could not be found.
+Exception Attributes: array (
+  'class' => 'Posts.jsonController',
+  'plugin' => NULL,
+)
+Request URL: /posts.json/
+Stack Trace:
+#0 /home/skip/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-21 23:11:40 Error: [NotFoundException] Not Found
+Request URL: /
+Stack Trace:
+#0 /home/skip/cake/lib/Cake/View/View.php(948): include()
+#1 /home/skip/cake/lib/Cake/View/View.php(910): View->_evaluate('/home/skip/cake...', Array)
+#2 /home/skip/cake/lib/Cake/View/View.php(471): View->_render('/home/skip/cake...')
+#3 /home/skip/cake/lib/Cake/Controller/Controller.php(954): View->render('home', NULL)
+#4 /home/skip/cake/app/Controller/PagesController.php(69): Controller->render('home')
+#5 [internal function]: PagesController->display('home')
+#6 /home/skip/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#7 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#9 /home/skip/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-08-22 07:41:32 Error: [MissingControllerException] Controller class Posts.jsonController could not be found.
+Exception Attributes: array (
+  'class' => 'Posts.jsonController',
+  'plugin' => NULL,
+)
+Request URL: /posts.json/
+Stack Trace:
+#0 /home/skip/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-22 07:43:18 Error: [MissingControllerException] Controller class Posts.jsonController could not be found.
+Exception Attributes: array (
+  'class' => 'Posts.jsonController',
+  'plugin' => NULL,
+)
+Request URL: /posts.json/
+Stack Trace:
+#0 /home/skip/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-22 07:46:14 Error: [MissingControllerException] Controller class Posts.jsonController could not be found.
+Exception Attributes: array (
+  'class' => 'Posts.jsonController',
+  'plugin' => NULL,
+)
+Request URL: /posts.json/
+Stack Trace:
+#0 /home/skip/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-22 07:46:23 Error: [NotFoundException] Not Found
+Request URL: /
+Stack Trace:
+#0 /home/skip/cake/lib/Cake/View/View.php(948): include()
+#1 /home/skip/cake/lib/Cake/View/View.php(910): View->_evaluate('/home/skip/cake...', Array)
+#2 /home/skip/cake/lib/Cake/View/View.php(471): View->_render('/home/skip/cake...')
+#3 /home/skip/cake/lib/Cake/Controller/Controller.php(954): View->render('home', NULL)
+#4 /home/skip/cake/app/Controller/PagesController.php(69): Controller->render('home')
+#5 [internal function]: PagesController->display('home')
+#6 /home/skip/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#7 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#9 /home/skip/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-08-22 07:46:29 Error: [NotFoundException] Not Found
+Request URL: /
+Stack Trace:
+#0 /home/skip/cake/lib/Cake/View/View.php(948): include()
+#1 /home/skip/cake/lib/Cake/View/View.php(910): View->_evaluate('/home/skip/cake...', Array)
+#2 /home/skip/cake/lib/Cake/View/View.php(471): View->_render('/home/skip/cake...')
+#3 /home/skip/cake/lib/Cake/Controller/Controller.php(954): View->render('home', NULL)
+#4 /home/skip/cake/app/Controller/PagesController.php(69): Controller->render('home')
+#5 [internal function]: PagesController->display('home')
+#6 /home/skip/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#7 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#9 /home/skip/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-08-22 07:49:41 Error: [MissingControllerException] Controller class Posts.jsonController could not be found.
+Exception Attributes: array (
+  'class' => 'Posts.jsonController',
+  'plugin' => NULL,
+)
+Request URL: /posts.json/
+Stack Trace:
+#0 /home/skip/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-22 09:37:43 Error: [NotFoundException] Not Found
+Request URL: /
+Stack Trace:
+#0 /home/skip/cake/lib/Cake/View/View.php(948): include()
+#1 /home/skip/cake/lib/Cake/View/View.php(910): View->_evaluate('/home/skip/cake...', Array)
+#2 /home/skip/cake/lib/Cake/View/View.php(471): View->_render('/home/skip/cake...')
+#3 /home/skip/cake/lib/Cake/Controller/Controller.php(954): View->render('home', NULL)
+#4 /home/skip/cake/app/Controller/PagesController.php(69): Controller->render('home')
+#5 [internal function]: PagesController->display('home')
+#6 /home/skip/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#7 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#9 /home/skip/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-08-22 09:51:29 Error: [NotFoundException] Not Found
+Request URL: /
+Stack Trace:
+#0 /home/skip/cake/lib/Cake/View/View.php(948): include()
+#1 /home/skip/cake/lib/Cake/View/View.php(910): View->_evaluate('/home/skip/cake...', Array)
+#2 /home/skip/cake/lib/Cake/View/View.php(471): View->_render('/home/skip/cake...')
+#3 /home/skip/cake/lib/Cake/Controller/Controller.php(954): View->render('home', NULL)
+#4 /home/skip/cake/app/Controller/PagesController.php(69): Controller->render('home')
+#5 [internal function]: PagesController->display('home')
+#6 /home/skip/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#7 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#9 /home/skip/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-08-22 09:52:28 Error: [NotFoundException] Not Found
+Request URL: /
+Stack Trace:
+#0 /home/skip/cake/lib/Cake/View/View.php(948): include()
+#1 /home/skip/cake/lib/Cake/View/View.php(910): View->_evaluate('/home/skip/cake...', Array)
+#2 /home/skip/cake/lib/Cake/View/View.php(471): View->_render('/home/skip/cake...')
+#3 /home/skip/cake/lib/Cake/Controller/Controller.php(954): View->render('home', NULL)
+#4 /home/skip/cake/app/Controller/PagesController.php(69): Controller->render('home')
+#5 [internal function]: PagesController->display('home')
+#6 /home/skip/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#7 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#9 /home/skip/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-08-22 09:54:14 Error: [NotFoundException] Not Found
+Request URL: /
+Stack Trace:
+#0 /home/skip/cake/lib/Cake/View/View.php(948): include()
+#1 /home/skip/cake/lib/Cake/View/View.php(910): View->_evaluate('/home/skip/cake...', Array)
+#2 /home/skip/cake/lib/Cake/View/View.php(471): View->_render('/home/skip/cake...')
+#3 /home/skip/cake/lib/Cake/Controller/Controller.php(954): View->render('home', NULL)
+#4 /home/skip/cake/app/Controller/PagesController.php(69): Controller->render('home')
+#5 [internal function]: PagesController->display('home')
+#6 /home/skip/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#7 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#9 /home/skip/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-08-23 07:58:11 Error: [NotFoundException] Not Found
+Request URL: /
+Stack Trace:
+#0 /home/skip/cake/lib/Cake/View/View.php(948): include()
+#1 /home/skip/cake/lib/Cake/View/View.php(910): View->_evaluate('/home/skip/cake...', Array)
+#2 /home/skip/cake/lib/Cake/View/View.php(471): View->_render('/home/skip/cake...')
+#3 /home/skip/cake/lib/Cake/Controller/Controller.php(954): View->render('home', NULL)
+#4 /home/skip/cake/app/Controller/PagesController.php(69): Controller->render('home')
+#5 [internal function]: PagesController->display('home')
+#6 /home/skip/cake/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#7 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /home/skip/cake/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#9 /home/skip/cake/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
